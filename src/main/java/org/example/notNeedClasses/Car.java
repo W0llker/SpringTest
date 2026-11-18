@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component("car")
-@Scope(scopeName = "prototype")
-@Primary
+//@Component("car")
+//@Scope(scopeName = "prototype")
+//@Primary
 public class Car implements Vehicle {
     public Car() {
         System.out.println("Car bean create");

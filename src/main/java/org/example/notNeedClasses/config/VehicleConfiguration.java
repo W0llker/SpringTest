@@ -5,14 +5,14 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class VehicleConfiguration {
-    @Bean
+//    @Bean
     public Motorbike motorbike() {
         return new Motorbike();
     }
 
-    @Bean
+//    @Bean
     public Car car() {
         return new Car();
     }
@@ -23,7 +23,7 @@ public class VehicleConfiguration {
 //        return new Person(car(), dog);
 //    }
     //2 Вариант -> лучше связывать объекты через аргументы, а не вызов методов
-    @Bean
+//    @Bean
     public Person person(@Qualifier("car") Vehicle vehicle, Dog dog) {
         return new Person(vehicle, dog);
     }

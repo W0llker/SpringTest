@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@ComponentScan("org.example")
+//@Configuration
+//@ComponentScan("org.example")
 public class PetConfiguration {
-    @Bean
+//    @Bean
     public Dog dog() {
         return new Dog();
     }

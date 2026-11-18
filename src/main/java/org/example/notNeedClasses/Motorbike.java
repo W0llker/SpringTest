@@ -2,7 +2,7 @@ package org.example.notNeedClasses;
 
 import org.springframework.stereotype.Component;
 
-@Component("bike")
+//@Component("bike")
 public class Motorbike implements Vehicle {
     public Motorbike() {
         System.out.println("Motorbike bean create");
