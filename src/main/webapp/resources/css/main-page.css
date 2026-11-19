@@ -144,6 +144,10 @@ button:hover {
     text-decoration: line-through;
 }
 
+.record__title_strikethrough {
+    text-decoration: line-through;
+}
+
 .record__title span {
     font-size: 20px;
     font-weight: 300;
