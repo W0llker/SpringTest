@@ -52,9 +52,26 @@ public class CommonController {
     }
 
     @RequestMapping(value = "/delete-record", method = RequestMethod.POST)
-    public String deleteRecord(@RequestParam int id,
-                               @RequestParam(name = "filter", required = false) String filterMode) {
-        recordService.deleteRecord(id);
-        return "redirect:/home" + ((filterMode != null && filterMode.isBlank()) ? "?filter=" + filterMode : "");
+    public String deleteRecord(QueryParameters parameters) {
+        recordService.deleteRecord(parameters.getId());
+        return "redirect:/home" + ((parameters.getFilter() != null && parameters.getFilter().isBlank()) ? "?filter=" + parameters.getFilter() : "");
+    }
+}
+
+class QueryParameters {
+    private int id;
+    private String filter;
+
+    public QueryParameters(String filter, int id) {
+        this.filter = filter;
+        this.id = id;
+    }
+
+    public String getFilter() {
+        return filter;
+    }
+
+    public int getId() {
+        return id;
     }
 }
