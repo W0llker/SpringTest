@@ -1,4 +1,4 @@
-package org.example.entity;
+package org.example.webmvc.entity;
 
 public enum RecordStatus {
     ACTIVE,

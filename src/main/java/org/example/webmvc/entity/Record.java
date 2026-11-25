@@ -1,4 +1,4 @@
-package org.example.entity;
+package org.example.webmvc.entity;
 
 public class Record {
     private static int counterSequence = 0;

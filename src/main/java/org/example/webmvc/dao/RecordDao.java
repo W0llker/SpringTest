@@ -1,7 +1,7 @@
-package org.example.dao;
+package org.example.webmvc.dao;
 
-import org.example.entity.Record;
-import org.example.entity.RecordStatus;
+import org.example.webmvc.entity.Record;
+import org.example.webmvc.entity.RecordStatus;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

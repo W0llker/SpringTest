@@ -1,9 +1,9 @@
-package org.example.service;
+package org.example.webmvc.service;
 
-import org.example.dao.RecordDao;
-import org.example.dto.RecordContainerDto;
-import org.example.entity.Record;
-import org.example.entity.RecordStatus;
+import org.example.webmvc.dao.RecordDao;
+import org.example.webmvc.dto.RecordContainerDto;
+import org.example.webmvc.entity.Record;
+import org.example.webmvc.entity.RecordStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

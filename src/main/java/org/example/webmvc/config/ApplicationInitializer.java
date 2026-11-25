@@ -1,4 +1,4 @@
-package org.example.config;
+package org.example.webmvc.config;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;

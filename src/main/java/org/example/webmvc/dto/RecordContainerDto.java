@@ -1,7 +1,7 @@
-package org.example.dto;
+package org.example.webmvc.dto;
 
 import java.util.List;
-import org.example.entity.Record;
+import org.example.webmvc.entity.Record;
 
 public class RecordContainerDto {
     private final List<Record> records;
